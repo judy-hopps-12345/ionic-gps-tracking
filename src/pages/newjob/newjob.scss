@@ -1,0 +1,54 @@
+page-newjob {
+  .content-wrapper {
+    position: relative;
+    height: 65vh;
+    background: #dcdcdc;
+    padding: 10px;
+
+    ion-label {
+      font-size: 20px;
+      margin: 0px;
+
+      &.price {
+        position: absolute;
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+        bottom: 50px;
+        img {
+          height: 30px;
+          vertical-align: middle;
+          margin-top: -5px;
+        }
+      }
+    }
+  }
+
+  .bottom-buttons {
+    border-top: 1px solid gray;
+    padding: 5px 21px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    button {
+      border-radius: 3px;
+      width: 95%;
+      height: 70px;
+
+      &.accept {
+        background-color: #36fe00;
+      }
+
+      &.reject {
+        background-color: #ed1c24;
+      }
+
+      ion-icon {
+        font-size: 60px;
+        color: white;
+      }
+    }
+  }
+}

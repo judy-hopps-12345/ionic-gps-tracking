@@ -1,0 +1,54 @@
+page-login {
+  .logo {
+    padding: 30px;
+  }
+
+  form {
+    padding: 30px;
+    .item-wrapper {
+      position: relative;
+      padding-left: 50px;
+      background-color: #e4e4e4;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      padding: 10px 10px 10px 50px;
+      border-radius: 10px;
+      border: 3px solid transparent;
+      
+
+      img {
+        width: 30px;
+        position: absolute;
+        left: 10px;
+      }
+
+      input {
+        width: 100%;
+        line-height: 40px;
+        border: none;
+        background: transparent;
+        font-size: 25px;
+      }
+
+      &.has-error {
+        border-color: red;
+      }
+    }
+
+    .btn-wrapper {
+      margin-bottom: 10px;
+    }
+
+   
+  }
+
+  .link {
+
+    ion-label {
+      color: #7d7171;
+      font-weight: bold;
+      font-size: 25px;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar color="secondary">
+    <ion-title>
+      Location Tracker
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <h3>Log History: {{geoService.locationList.length}} times</h3>
+
+  <div>
+    <div *ngFor="let item of geoService.locationList">
+      <ion-row>
+        <ion-col col-4>{{item.type}}</ion-col>
+        <ion-col col-4>{{item.lat}}</ion-col>
+        <ion-col col-4>{{item.lng}}</ion-col>
+      </ion-row>
+    </div>
+
+  </div>
+</ion-content>

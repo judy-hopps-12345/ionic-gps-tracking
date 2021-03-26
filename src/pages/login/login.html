@@ -1,0 +1,31 @@
+<ion-content padding>
+  <div class="logo">
+    <img src="assets/icon/logo_alacasacr.png">
+  </div>
+
+  <div class="form-wrapper">
+    <form class="form" [formGroup]="form">
+
+      <div class="item-wrapper" [ngClass]="validate.displayFieldCss(form, 'userName')">
+        <img src="assets/icon/icon_user.png">
+        <input name="username" formControlName="userName" placeholder="Usuario">
+      </div>
+      <div class="item-wrapper" [ngClass]="validate.displayFieldCss(form, 'userPass')">
+        <img src="assets/icon/icon_security.png">
+        <input name="password" type="password" formControlName="userPass" placeholder="Contrasena">
+      </div>
+
+      <div class="btn-wrapper">
+        <button ion-button full large color="danger" class="btn-sign common-btn" (click)="login()">Iniciar</button>
+      </div>
+
+      <div class="btn-wrapper">
+        <button ion-button full large color="dark" class="btn-sign common-btn" (click)="goLink2()">Suscribir</button>
+      </div>
+    </form>
+  </div>
+
+  <div text-center class="link">
+    <ion-label (click)="goLink1()">Olvido la contrasena?</ion-label>
+  </div>
+</ion-content>

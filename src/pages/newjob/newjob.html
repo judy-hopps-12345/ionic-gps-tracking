@@ -1,0 +1,30 @@
+<ion-content padding>
+  <div class="logo">
+    <img src="assets/icon/logo_alacasacr.png">
+  </div>
+
+  <div class="content-wrapper">
+    <ion-label>#{{jobInfo['DJID']}}</ion-label>
+    <ion-label>{{jobInfo['ATID_Job_Type']}}</ion-label>
+    <ion-label>{{jobInfo['Date_Job']}}</ion-label>
+
+    <ion-label class="price">
+      <img src="assets/icon/icon_colones.png">{{jobInfo['Cost']}}</ion-label>
+  </div>
+
+  <div class="bottom-buttons">
+    <ion-row>
+      <ion-col col-6>
+        <button class="accept" (click)="accept()">
+          <ion-icon ios="ios-checkmark" md="md-checkmark"></ion-icon>
+        </button>
+      </ion-col>
+      <ion-col col-6 text-center>
+        <button class="reject" (click)="reject()">
+          <ion-icon ios="ios-close" md="md-close"></ion-icon>
+        </button>
+      </ion-col>
+    </ion-row>
+  </div>
+
+</ion-content>

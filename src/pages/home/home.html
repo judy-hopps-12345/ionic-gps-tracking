@@ -1,0 +1,40 @@
+<ion-content padding>
+  <div class="logo">
+    <img src="assets/icon/logo_alacasacr.png">
+  </div>
+
+  <div class="content-wrapper">
+
+    <div class="userinfo">
+      <ion-label>Hola {{user['FirstName']}}</ion-label>
+    </div>
+
+    <div class="buttons-wrapper">
+      <button class="Disponible">Disponible</button>
+      <button class="">Estado</button>
+      <button class="">Trabajos</button>
+      <button class="">Cuenta</button>
+    </div>
+  </div>
+
+  <div class="bottom-buttons">
+    <ion-row>
+      <ion-col col-4>
+        <button (click)="goToLog()">
+          <img src="assets/icon/icon_location.png">
+        </button>
+      </ion-col>
+      <ion-col col-4 text-center>
+        <button>
+          <img src="assets/icon/icon_home.png">
+        </button>
+      </ion-col>
+      <ion-col col-4 text-right>
+        <button (click)="logout()">
+          <img src="assets/icon/icon_logout.png">
+        </button>
+      </ion-col>
+    </ion-row>
+  </div>
+
+</ion-content>
